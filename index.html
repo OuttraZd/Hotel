@@ -1,0 +1,163 @@
+<DOCTYPE! HTML>
+<html lang="pl">
+	<head>
+		<title> Hotel </title>
+		<link href="style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+	</head>
+	
+	<body>
+	
+	<header class="header">
+			<div class="logo">
+				<img src="img/logo.png" alt="logo">
+			</div>
+		<nav class="nav">
+				<ul>
+					<li>O hotelu</li>
+					<li>Galeria</li>
+					<li>Rezerwacja/Cennik</li>
+					<li>Polożenie</li>
+					<li>Kontakt</li>
+				</ul>
+		</nav>
+		
+		<div class="toggle">
+			<span class="fa fa-bars menu"></span>
+		</div>
+		
+	</header>
+		
+	<section class="welcome">
+		<div class="container">
+			<h1 class="name">POZNAJ NASZE MIEJSCE</h1>
+			<p class="text">Mamy nadzieję, że zainteresuje was nasz hotel Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi felis velit, dapibus sit amet scelerisque at, pellentesque nec ligula. Phasellus aliquet interdum ullamcorper.</p>
+        </div>
+    </section>
+    		
+	<section class="about">
+		<div class="option-container">
+			
+			<div class="option">
+				<div class="option-image">
+					<span class="fas fa-bowling-ball fa-2x"></span></div>
+						<div class="option-name"><b>Mnóstwo atrakcji</b></div>
+							<div class="option-dis">W naszym hotelu czeka Cię mnóstwo atrakcji licząc od siłowni i basenu kończąc na wielu kortach do gry m.in w koszykówkę, tenisa i wielu sekcji na hali sportowej.</div>			
+			</div>
+				
+			<div class="option">
+				<div class="option-image">
+					<span class="fas fa-hamburger fa-2x"></span></div>
+						<div class="option-name"><b>Katering</b></div>
+							<div class="option-dis">Posiadamy możliwość kateringu, duży wybór jakościowych drogich i eksplozywnych dań oraz napojów.</div>
+				
+			</div>
+			
+			<div class="option">
+				<div class="option-image">
+					<span class="fas fa-hands-helping fa-2x"></span></div>
+						<div class="option-name"><b>Profesjonalna obsługa i pomoc</b></div>
+							<div class="option-dis">Nasz obsługa działa całodobowo, twój problem - nasz obowiązek Ci pomóc. Posiadamy w pełni wysoko wykwalifikowanych lekarzy i pielęgniarzy.</div>
+			
+			</div>
+							<div class="option">
+								<div class="option-image">
+									<span class="fas fa-hands-helping fa-2x"></span></div>
+										<div class="option-name"><b>Profesjonalna obsługa i pomoc</b></div>
+											<div class="option-dis">Nasz obsługa działa całodobowo, twój problem - nasz obowiązek Ci pomóc. Posiadamy w pełni wysoko wykwalifikowanych lekarzy i pielęgniarzy.</div>
+			</div>
+			
+		</div>
+
+	</section>
+	
+	<div class="gallery-section">
+	    <div class="inner-width">
+	        <h1>Galeria</h1>
+	        <div class="border"></div>
+	        <div class="gallery">
+	            
+	            <a href="img/1.png" class="image">
+	                <img src="img/1.png" alt="jpg">
+	            </a>
+	            
+	             <a href="img/1.png" class="image">
+	                <img src="img/1.png" alt="jpg">
+	            </a>
+	            
+	             <a href="img/1.png" class="image">
+	                <img src="img/1.png" alt="jpg">
+	            </a>
+	            
+	             <a href="img/1.png" class="image">
+	                <img src="img/1.png" alt="jpg">
+	            </a>
+	            
+	             <a href="img/1.png" class="image">
+	                <img src="img/1.png" alt="jpg">
+	            </a>
+	            
+	             <a href="img/1.png" class="image">
+	                <img src="img/1.png" alt="jpg">
+	            </a>
+	            
+	             <a href="img/1.png" class="image">
+	                <img src="img/1.png" alt="jpg">
+	            </a>
+	            
+	             <a href="img/1.png" class="image">
+	                <img src="img/1.png" alt="jpg">
+	            </a>
+	            
+	        </div>
+	    </div>
+	</div>
+	
+	<button type="button" onClick="closePopup()
+	
+	<script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+	<script type="text/javascript">
+	
+		$(document).ready(function (){
+			$('.menu').click(function (){
+				$('ul').toggleClass('active');
+				})
+			})	
+	</script>
+	
+	<script>
+		(function() {  
+		window.addEventListener("scroll", function (event) {
+		var scroll = this.scrollY;
+		if(scroll > 1) {
+		document.body.classList.add('scrolled');
+		} else {
+		document.body.classList.remove('scrolled');
+		}
+		});
+		})()
+	</script>
+	
+	<script>
+        
+        $(".gallery").magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery:{
+                enabled: true
+            }
+        });
+        
+        function closePopup() {
+        $.magnificPopup.close();
+        }
+    </script>
+    
+</body>
+</html>
