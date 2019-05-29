@@ -6,7 +6,7 @@
 body {
 	margin:0;
 	padding:0;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 .header {
@@ -20,7 +20,6 @@ body {
 	position:fixed;
 	-webkit-transition:1s ease;
 	transition:1s ease;
-	justify-content:space-between;
 }
 
 .scrolled header {
@@ -84,7 +83,6 @@ ul li a {
 	-webkit-box-pack:center;
 	-ms-flex-pack:center;
 	justify-content:center;
-	align-items: center;
 	-webkit-transform:skew(0deg, -5deg) translateY(-120px);
 	transform:skew(0deg, -5deg) translateY(-120px);
 }
@@ -99,21 +97,24 @@ ul li a {
 .name {
 	color:#fff;
 	text-align:center;
-	margin-top:100px;
+	top:115px;
+	position:relative;
 	font-family: 'Montserrat', sans-serif;
 }
 
 .text {
 	color:#fff;
 	text-align:center;
-	padding:20px 50px;
+	top:110px;
+	padding:50px;
+	position:relative;
 	letter-spacing:4;
 	font-size:14px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .toggle {
-	width:auto;
+	width:100%;
 	padding:7px 20px;
 	text-align:right;
 	-webkit-box-sizing:border-box;
@@ -121,7 +122,6 @@ ul li a {
 	color:#fff;
 	font-size:30px;
 	display:none;
-	cursor:pointer;
 }
 
 .about {
@@ -165,19 +165,20 @@ ul li a {
 
 .option:hover {
 	-webkit-transform:scale(1.07);
-	transform:scale(1.07);
+	transform:scale(1.08);
 }
 
 .option-name {
 	padding:10px 0px;
 	text-transform:uppercase;
+	font-family: 'Montserrat', sans-serif;
 }
 
 
 .option-dis {
 	text-align:center;
-	padding:20px 30px;
-	font-family: 'Poppins', sans-serif;
+	padding:20px 5px;
+	font-family: 'Montserrat', sans-serif;
 	font-size:17px;
 }
 
@@ -305,7 +306,7 @@ ul li a {
     
     .gallery-section .image {
         flex:50%;
-    
+    }
 }
 
 
