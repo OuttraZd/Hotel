@@ -6,12 +6,12 @@
 body {
 	margin:0;
 	padding:0;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 .header {
 	width:100%;
-	height:43px;
+	height:50px;
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
@@ -20,10 +20,11 @@ body {
 	position:fixed;
 	-webkit-transition:1s ease;
 	transition:1s ease;
+	align-items:center;
 }
 
 .scrolled header {
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
 .logo {
@@ -40,7 +41,7 @@ ul {
 	width:95%;
 	margin:0 auto;
 	text-align:right;
-	left:14px;
+	right:15px;
 	position:relative;
 	padding:1px;
 }
@@ -48,7 +49,7 @@ ul {
 ul li {
 	list-style-type:none;
 	display:inline-block;
-	padding:6px;
+	padding:15px;
 	color:#fff;
 	font-size:17px;
 	-webkit-transition:ease 0.2s;
@@ -57,12 +58,7 @@ ul li {
 }
 
 ul li:hover {
-	border-bottom:2px solid #2972b5;
-	background-color: rgba(0, 0, 0, 0.4);
-	background-color: rgba(255, 255, 255, 0.3);
-	-webkit-transform:scaleX(1.05);
-	transform:scaleX(1.05);
-	padding-bottom:13px;
+	transform:scale(1.1);
 }
 
 ul li a {
@@ -75,7 +71,8 @@ ul li a {
 	height:500px;
 	background-color:#2972b5;
 	position:relative;
-	background-image:url("img/about.png");
+	background-image:url("img/welcome.png");
+	background-position:center;
     background-repeat: no-repeat;
 	display:-webkit-box;
 	display:-ms-flexbox;
@@ -85,6 +82,9 @@ ul li a {
 	justify-content:center;
 	-webkit-transform:skew(0deg, -5deg) translateY(-120px);
 	transform:skew(0deg, -5deg) translateY(-120px);
+	-webkit-box-shadow: 1px 1px 20px 0px rgba(33,31,33,1);
+	-moz-box-shadow: 1px 1px 20px 0px rgba(33,31,33,1);
+	box-shadow: 1px 1px 20px 0px rgba(33,31,33,1);
 }
 
 .container {
@@ -99,7 +99,6 @@ ul li a {
 	text-align:center;
 	top:115px;
 	position:relative;
-	font-family: 'Montserrat', sans-serif;
 }
 
 .text {
@@ -110,7 +109,6 @@ ul li a {
 	position:relative;
 	letter-spacing:4;
 	font-size:14px;
-	font-family: 'Montserrat', sans-serif;
 }
 
 .toggle {
@@ -171,14 +169,12 @@ ul li a {
 .option-name {
 	padding:10px 0px;
 	text-transform:uppercase;
-	font-family: 'Montserrat', sans-serif;
 }
 
 
 .option-dis {
 	text-align:center;
 	padding:20px 5px;
-	font-family: 'Montserrat', sans-serif;
 	font-size:17px;
 }
 
@@ -306,6 +302,10 @@ ul li a {
     
     .gallery-section .image {
         flex:50%;
+    }
+    
+    .welcome {
+    	height:580px;
     }
 }
 
