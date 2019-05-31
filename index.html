@@ -113,19 +113,10 @@
 	    </div>
 	</div>
 	
-	<button type="button" onClick="closePopup()
-	
-	<script src="https://code.jquery.com/jquery-3.4.0.js"></script>
-	<script type="text/javascript">
-	
-		$(document).ready(function (){
-			$('.menu').click(function (){
-				$('ul').toggleClass('active');
-				})
-			})	
-	</script>
+	<button type="button" onClick="closePopup()">
 	
 	<script>
+	
 		(function() {  
 		window.addEventListener("scroll", function (event) {
 		var scroll = this.scrollY;
@@ -136,22 +127,38 @@
 		}
 		});
 		})()
+	
 	</script>
 	
 	<script>
-        
-        $(".gallery").magnificPopup({
-            delegate: 'a',
-            type: 'image',
-            gallery:{
-                enabled: true
-            }
-        });
-        
-        function closePopup() {
-        $.magnificPopup.close();
-        }
-    </script>
+	
+	function closePopup() {
+	$.magnificPopup.close();
+	}
+	
+	</script>
+	
+	<script>
+	
+	$('.menu').click(function (){
+	$('ul').toggleClass('active');
+	})
+	
+	</script>
+	
+	<script>
+	
+	$(".gallery").magnificPopup({
+	delegate: 'a',
+	type: 'image',
+	gallery:{
+	enabled: true
+	}
+	});
+	});
+	
+	</script>
+	
     
 </body>
 </html>
