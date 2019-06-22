@@ -234,6 +234,11 @@ ul li a {
     transform: scale(1.04);
 }
 
+.script {
+	display:none;
+}
+
+
 
 @media (max-width:768px) {
 
