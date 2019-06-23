@@ -3,6 +3,7 @@
   box-sizing: border-box;
 }
 
+
 body {
 	margin:0;
 	padding:0;
@@ -238,6 +239,144 @@ ul li a {
 	display:none;
 }
 
+.plan-name {
+	text-align:center;
+	font-size:24px;
+	color:#000;
+	padding:80px 0 20px 0;
+	font-weight: bold;
+	text-transform:uppercase;
+}
+
+.plan-name-border {
+	width:260px;
+	height:4px;
+	background-color:#000;
+	margin:0 auto;
+	margin-top:25px;
+}
+
+
+slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin-top:-160px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:40px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin:5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.info-container {
+	display:flex;
+	flex-direction:column;
+}
+
+.info {
+	font-size:24px;
+}
+
+.more,
+.more2 {
+	margin-top:25px;
+}
+
+
+.more-info {
+	width:100px;
+	height:30px;
+	border:2px solid #000;
+	background:none;
+	transition:0.5s;
+}
+
+.more-info:hover {
+	background:#000;
+	color:#fff;
+	outline:none;
+	transform:scale(1.1);
+}
+
+.plan-menu,
+.plan-menu2 {
+	width:100%;
+	height:100vh;
+	display:none;
+	z-index:9999;
+}
+
+.plan-menu-container {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content: center;
+}
+
+.active-plan-menu {
+	background:#f1f1f1;
+	margin:0 auto;
+	display:block;
+	position:fixed;
+}
+
+.plan-box-active {
+	font-size:40px;
+}
 
 
 @media (max-width:768px) {
@@ -246,7 +385,7 @@ ul li a {
 		display:block;
 	}
 	
-	.active {
+	.active-menu {
 		display:block;
 	}
 	
