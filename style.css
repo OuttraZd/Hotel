@@ -275,7 +275,7 @@ slideshow-container {
   position: absolute;
   width: auto;
   padding: 16px;
-  color: #888;
+  color: #000;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
@@ -290,11 +290,6 @@ slideshow-container {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  color: white;
-}
 
 /* The dot/bullet/indicator container */
 .dot-container {
@@ -302,7 +297,7 @@ slideshow-container {
   justify-content:center;
   align-items:center;
   height:40px;
-  background: #ddd;
+  background: #fff;
 }
 
 /* The dots/bullets/indicators */
@@ -319,7 +314,7 @@ slideshow-container {
 
 /* Add a background color to the active dot/circle */
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #000;
 }
 
 .info-container {
@@ -373,8 +368,13 @@ slideshow-container {
 
 .plan-info {
 	font-size:19px;
-	margin-top:10px;
+	margin-top:15px;
 }
+
+.choice {
+	color:#000;
+}
+
 
 .plan-container {
 	display:flex;
@@ -382,6 +382,17 @@ slideshow-container {
 	align-items:center;
 	flex-direction:column;
 	height:100%;
+	width:100%;
+}
+
+.plan-information {
+	margin-top:-30px;
+	font-size:18px
+}
+
+ol {
+	list-style-type:none;
+	text-align: center;
 }
 
 
