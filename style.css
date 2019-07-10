@@ -16,6 +16,7 @@
 }
 
 
+
 body {
 	margin:0;
 	padding:0;
@@ -586,6 +587,13 @@ slideshow-container {
    	
    	.footer {
    		height:130px;
+   	}
+   	
+   	#link1, 
+   	#link2, 
+   	#link3,
+   	#link4 {
+   		color:#000;
    	}
 }
 

@@ -21,10 +21,10 @@
 		
 		<nav class="nav">
 				<ul>
-					<li>O hotelu</li>
-					<li>Galeria</li>
-					<li>Rezerwacja i Cennik</li>
-					<li>Polożenie i Kontakt</li>
+					<li><a id="link1" href="#">O hotelu</a></li>
+					<li><a id="link2" href="#">Galeria</a></li>
+					<li><a id="link3" href="#">Rezerwacja i Cennik</a></li>
+					<li><a id="link4" href="#">Polożenie i Kontakt</a></li>
 				</ul>
 		</nav>
 		
@@ -59,6 +59,8 @@
 	</div>
 			
 	<!-----------######### Menu po kliknięciu Szczegóły ####### ----->
+	
+	<div id="aboutViev"></div>
 	
 	<section class="welcome">
 		<div class="container">
@@ -96,6 +98,8 @@
 		</div>
 
 	</section>
+	
+	<div id="galleryViev"></div>
 	
 	<div class="gallery-section">
 	    <div class="inner-width">
@@ -143,6 +147,9 @@
 			<div class="plan-name-border"></div>
 		</div>
 
+
+	<div id="priceViev"></div>
+	
 <!-- Slideshow container -->
 <div class="slideshow-container">
 
@@ -175,6 +182,8 @@
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
 </div>
+
+	<div id="contactViev"></div>
 
 	<div class="contact-place-head">
 		<h2>Położenie i Kontakt</h2>
@@ -222,6 +231,23 @@
 		}
 		});
 		})()
+	
+	</script>
+	
+	<script type="text/javascript" src="script/jquery.scrollTo.min.js"></script>
+	<script type="text/javascript">
+	
+		jQuery(function($)
+		{
+		//zresetuj scrolla
+		$.scrollTo(0);
+	
+		$('#link1').click(function() { $.scrollTo($('#aboutViev'), 500); });
+		$('#link2').click(function() { $.scrollTo($('#galleryViev'), 500); });
+		$('#link3').click(function() { $.scrollTo($('#priceViev'), 500); });
+		$('#link4').click(function() { $.scrollTo($('#contactViev'), 500); });
+		}
+		);
 	
 	</script>
 	
