@@ -15,8 +15,6 @@
 	color:#000;
 }
 
-
-
 body {
 	margin:0;
 	padding:0;
@@ -35,16 +33,12 @@ body {
 	-webkit-transition:1s ease;
 	transition:1s ease;
 	align-items:center;
+	justify-content: flex-end;
+
 }
 
-.scrolled header {
-	background-color: rgba(0, 0, 0, 0.3);
-}
-
-.logo {
-	width:150px;
-	height:50px;
-	padding:4px 10px;
+.scrolled .header {
+	background-color:rgba(0, 0, 0, 0.534);
 }
 
 .nav {
@@ -126,14 +120,19 @@ ul li a {
 }
 
 .toggle {
-	width:100%;
-	padding:7px 20px;
-	text-align:right;
+	width:5%;
+	padding-right: 40px;
 	-webkit-box-sizing:border-box;
 	box-sizing:border-box;
 	color:#fff;
-	font-size:30px;
+	font-size:33px;
 	display:none;
+	cursor: pointer;
+}
+
+.scrolled .toggle {
+	color: #000;
+	transition: color ease 0.7s;
 }
 
 .about {
@@ -173,6 +172,7 @@ ul li a {
 	margin-left:2%;
 	margin-top:50px;
 	width:25%; /* Dzielic 100 na ilosc diva option */
+	cursor: pointer;
 }
 
 .option:hover {
@@ -183,13 +183,14 @@ ul li a {
 .option-name {
 	padding:10px 0px;
 	text-transform:uppercase;
+	font-size:18px;
+	font-family: 'Poppins', sans-serif;
 }
-
 
 .option-dis {
 	text-align:center;
 	padding:20px 5px;
-	font-size:17px;
+	font-size:18px;
 }
 
 .gallery-section {
@@ -270,7 +271,7 @@ ul li a {
 }
 
 
-slideshow-container {
+.slideshow-container {
   position: relative;
   background: #f1f1f1f1;
 }
@@ -295,6 +296,7 @@ slideshow-container {
   user-select: none;
   margin-top:-160px;
 }
+
 
 /* Position the "next button" to the right */
 .next {
@@ -351,6 +353,7 @@ slideshow-container {
 	border:2px solid #000;
 	background:none;
 	transition:0.5s;
+	cursor: pointer;
 }
 
 .more-info:hover {
@@ -476,6 +479,7 @@ slideshow-container {
 
 .icon {
 	padding-right:5px;
+	margin-top:4px;
 }
 
 .icon-disc {
@@ -507,6 +511,24 @@ slideshow-container {
 	transform:scale(1.2);
 }
 
+
+@media (min-width:1350px) {
+	.contact-me {
+		font-size:25px;
+	}
+
+	.details {
+		font-size:19px;
+	}
+
+	.icon-disc {
+		font-size:16px;
+	}
+
+	ul li {
+		font-size:19px
+	}
+}
 
 @media (max-width:768px) {
 
@@ -545,7 +567,7 @@ slideshow-container {
 	
 	.nav {
 		position: absolute;
-		top:43px;
+		top:50px;
 	}
 	
 	.container {
@@ -594,7 +616,11 @@ slideshow-container {
    	#link3,
    	#link4 {
    		color:#000;
-   	}
+	   }
+	   
+	.scrolled .header {
+		background:none;
+	}
 }
 
 

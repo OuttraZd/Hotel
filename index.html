@@ -15,10 +15,9 @@
 	<body>
 	
 	<header class="header">
-			<div class="logo">
-				<img src="img/logo.png" alt="logo">
-			</div>
 		
+		<!-- Tu wstaw logo i src div class="logo"> -->
+
 		<nav class="nav">
 				<ul>
 					<li><a id="link1" href="#">O hotelu</a></li>
@@ -150,45 +149,45 @@
 
 	<div id="priceViev"></div>
 	
-<!-- Slideshow container -->
-<div class="slideshow-container">
+	<!-- Slideshow container -->
+	<div class="slideshow-container">
 
-  <!-- Full-width slides/quotes -->
-  <div class="mySlides">
-  	<div class="info-container">
-    	<span class="info">Plan I</span>
-    	<span class="more">
-    		<button class="more-info">Szczegóły</button>
-    	</span>
-    </div>
-  </div>
-
-  <div class="mySlides">
-  	<div class="info-container">
-		<span class="info">Plan II</span>
-		<span class="more2">
-			<button class="more-info">Szczegóły</button>
-		</span>
+	<!-- Full-width slides/quotes -->
+	<div class="mySlides">
+		<div class="info-container">
+			<span class="info">Plan I</span>
+			<span class="more">
+				<button class="more-info">Szczegóły</button>
+			</span>
+		</div>
 	</div>
-  </div>
 
-  <!-- Next/prev buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-
-<!-- Dots/bullets/indicators -->
-<div class="dot-container">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-</div>
-
-	<div id="contactViev"></div>
-
-	<div class="contact-place-head">
-		<h2>Położenie i Kontakt</h2>
-		<div class="border"></div>
+	<div class="mySlides">
+		<div class="info-container">
+			<span class="info">Plan II</span>
+			<span class="more2">
+				<button class="more-info">Szczegóły</button>
+			</span>
+		</div>
 	</div>
+
+	<!-- Next/prev buttons -->
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+
+	<!-- Dots/bullets/indicators -->
+	<div class="dot-container">
+	<span class="dot" onclick="currentSlide(1)"></span> 
+	<span class="dot" onclick="currentSlide(2)"></span> 
+	</div>
+
+		<div id="contactViev"></div>
+
+		<div class="contact-place-head">
+			<h2>Położenie i Kontakt</h2>
+			<div class="border"></div>
+		</div>
 
 
 	<section class="contact-place">
@@ -224,7 +223,7 @@
 		(function() {  
 		window.addEventListener("scroll", function (event) {
 		var scroll = this.scrollY;
-		if(scroll > 305) {
+		if(scroll > 310) {
 		document.body.classList.add('scrolled');
 		} else {
 		document.body.classList.remove('scrolled');
