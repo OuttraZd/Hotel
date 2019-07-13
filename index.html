@@ -5,6 +5,7 @@
 		<link href="style.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap" rel="stylesheet"> 
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"> 
+		<link rel="stylesheet" href="aos.css">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -63,8 +64,8 @@
 	
 	<section class="welcome">
 		<div class="container">
-			<h1 class="name">Odkryj nowy świat</h1>
-			<p class="text">Mamy nadzieję, że zainteresuje was nasz hotel Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi felis velit, dapibus sit amet scelerisque at, pellentesque nec ligula. Phasellus aliquet interdum ullamcorper.</p>
+			<h1 class="name">Sposób na twój czas</h1>
+			<p class="text"> Nasz hotel oferuje szeroki zakres dóbr wypoczynkowych z najwyższą jakością produktów oraz dużym wyborem planów i promocji.</p>
         </div>
     </section>
     		
@@ -106,36 +107,36 @@
 	        <div class="border"></div>
 	        <div class="gallery">
 	            
-	            <a href="img/1.png" class="image">
+	            <a href="img/1.png" data-aos="zoom-in-down" class="image">
 	                <img src="img/1.png" alt="jpg">
 	            </a>
 	            
-	             <a href="img/1.png" class="image">
-	                <img src="img/1.png" alt="jpg">
+	             <a href="img/8.png" data-aos="zoom-in-down" class="image">
+	                <img src="img/8.png" alt="jpg">
 	            </a>
 	            
-	             <a href="img/1.png" class="image">
-	                <img src="img/1.png" alt="jpg">
+	             <a href="img/3.png" data-aos="zoom-in-down" class="image">
+	                <img src="img/3.png" alt="jpg">
 	            </a>
 	            
-	             <a href="img/1.png" class="image">
-	                <img src="img/1.png" alt="jpg">
+	             <a href="img/4.png" data-aos="zoom-in-down" class="image">
+	                <img src="img/4.png" alt="jpg">
 	            </a>
 	            
-	             <a href="img/1.png" class="image">
-	                <img src="img/1.png" alt="jpg">
+	             <a href="img/6.png" data-aos="zoom-in-down" class="image">
+	                <img src="img/6.png" alt="jpg">
 	            </a>
 	            
-	             <a href="img/1.png" class="image">
-	                <img src="img/1.png" alt="jpg">
+	             <a href="img/5.png" data-aos="zoom-in-down" class="image">
+	                <img src="img/5.png" alt="jpg">
 	            </a>
 	            
-	             <a href="img/1.png" class="image">
-	                <img src="img/1.png" alt="jpg">
+	             <a href="img/7.png" data-aos="zoom-in-down" class="image">
+	                <img src="img/7.png" alt="jpg">
 	            </a>
 	            
-	             <a href="img/1.png" class="image">
-	                <img src="img/1.png" alt="jpg">
+	             <a href="img/2.png" data-aos="zoom-in-down" class="image">
+	                <img src="img/2.png" alt="jpg">
 	            </a>
 	            
 	        </div>
@@ -156,7 +157,7 @@
 	<div class="mySlides">
 		<div class="info-container">
 			<span class="info">Plan I</span>
-			<span class="more">
+			<span data-aos="zoom-in-up "class="more">
 				<button class="more-info">Szczegóły</button>
 			</span>
 		</div>
@@ -165,7 +166,7 @@
 	<div class="mySlides">
 		<div class="info-container">
 			<span class="info">Plan II</span>
-			<span class="more2">
+			<span data-aos="zoom-in-up" class="more2">
 				<button class="more-info">Szczegóły</button>
 			</span>
 		</div>
@@ -186,13 +187,13 @@
 
 		<div class="contact-place-head">
 			<h2>Położenie i Kontakt</h2>
-			<div class="border"></div>
+			<div class="contact-border"></div>
 		</div>
 
 
 	<section class="contact-place">
-		<iframe class="map" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Warszawa%20Stadion+(Tytu%C5%82)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-		<div class="contact-container">
+		<iframe data-aos="fade-up" class="map" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Warszawa%20Stadion+(Tytu%C5%82)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+		<div data-aos="zoom-in" class="contact-container">
 			<h3 class="contact-me">Skontaktuj się z <br> nami!</h3>
 			<div class="details"> Chcesz poznać szczegóły naszej oferty? Zapytać co jeszcze możemy dla Ciebie zrobić? Skontaktuj się z nami, odpowiemy na każde twoje pytanie.</div>
 			
@@ -341,6 +342,14 @@
 	
 	</script>
 	
-    
+	<script type="text/javascript" src="script/aos.js"></script>
+	<script>
+	
+		$(function() {
+		AOS.init();
+		});
+	
+	</script>
+	
 </body>
 </html>
