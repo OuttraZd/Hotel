@@ -410,6 +410,10 @@ ul li a {
 	padding:10px 0;
 }
 
+.fa-times {
+	cursor:pointer;
+}
+
 .plan-info {
 	font-size:24px;
 	margin-top:20px;
