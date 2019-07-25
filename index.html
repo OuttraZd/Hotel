@@ -1,78 +1,361 @@
-<!DOCTYPE html>
+<DOCTYPE! HTML>
 <html lang="pl">
-    <head>
-    	<title>Fushia | Fotografia</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque|Montserrat&display=swap" rel="stylesheet">
-    </head>
-    <body>
-      	<section class="main">
-        <header class="header">
-            <div class="logo">Fushia | Fotografia</div>
-            <button class="menu">
-                <div class="button-container">
-                    <div class="caret-left"><span class="fas fa-caret-left"></span></div>
-                    <div class="caret-down"><span class="fas fa-caret-down"></span></div>
-                    <div class="button-text">Menu</div>
-                </div>
-            </button>
-        </header>
-        
-       <nav class="nav">
-       		<ul>
-       			<li>Galeria</li>
-       			<li>Wydarzenia</li>
-       			<li>Informacje</li>
-       		</ul>
-       </nav>
-       </section>
-       
-       <div class="more">
-      	<span class="fas fa-angle-double-down"></span>
-      </div>
-             
-       <section class="second">
-           <div class="explore-margin">
-                <button class="explore"><a href="https://github.com/OuttraZd">Więcej</a></button>
-            </div>
-       </section>
-       
-       <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-       
-       <script type="text/javascript">
-       		
-       		$(document).ready(function (){
-       		$('.menu').click(function (){
-       		$('ul').toggleClass('active');
-       		})
-       		})	
-       
-       </script>
-         
-       <script type="text/javascript">
-       
-       $(document).ready(function (){
-       $('.more').click(function (){
-       $('.second').toggleClass('second-active');
-       })
-       })	
-       
-       </script>  
-       
-       <script type="text/javascript">
+	<head>
+		<title>Hotel</title>
+		<link href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"> 
+		<link rel="stylesheet" href="css/aos.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+	</head>
+	
+	<body>
+	
+	<header class="header">
+		
+		<!-- Tu wstaw logo i src div class="logo"> -->
 
-         $('.main').mousemove(function(e){
-            var moveX = (e.pageX * 1 / -10);
-            var moveY = (e.pageY * 1 / -10);
-            $(this).css('background-position', moveX + 'px ' + moveY + 'px')
-        })
+		<nav class="nav">
+				<ul>
+					<li><a id="link1" href="#">O hotelu</a></li>
+					<li><a id="link2" href="#">Galeria</a></li>
+					<li><a id="link3" href="#">Rezerwacja i Cennik</a></li>
+					<li><a id="link4" href="#">Polożenie i Kontakt</a></li>
+				</ul>
+		</nav>
+		
+		<div class="toggle">
+			<span class="fa fa-bars menu"></span>
+		</div>
+		
+	</header>
+	
+	<!--Menu po kliknięciu Szczegóły-->
+	
+	<div class="plan-menu">
+		<div class="plan-container">
+			<div class="plan-info">Plan I obejmuję:</div>
+			<div class="plan-information"> Zawartość pierwsza <br> Zawartość druga <br> Zawartość trzecia</div>
+			<div class="price">Cena 150zł/24h</div>
+			<div class="plan-box-active">
+				<span class="fas fa-times"></span>
+			</div>
+		</div>
+	</div>
+	
+	<div class="plan-menu2">
+		<div class="plan-container">
+			<div class="plan-info">Plan II obejmuję:</div>
+			<div class="plan-information"> Zawartość pierwsza <br> Zawartość druga <br> Zawartość trzecia</div>
+			<div class="price">Cena 240zł/24h</div>
+			<div class="plan-box-active">
+				<span class="fas fa-times"></span>
+			</div>
+		</div>
+	</div>
+			
+	<!-- Menu po kliknięciu Szczegóły-->
+	
+	<div id="aboutViev"></div>
+	
+	<section class="welcome">
+		<div class="container">
+			<h1 class="name">Sposób na twój czas</h1>
+			<p class="text"> Nasz hotel oferuje szeroki zakres dóbr wypoczynkowych z najwyższą jakością produktów oraz dużym wyborem planów i promocji.</p>
+        </div>
+	</section>
+	
+	<div class="we-container">
+		<span class="fas fa-check circle fa-2x"></span>
+		<div class="we-name">O miejscu kilka słów</div>
+		<div class="we-border"></div>
+	</div>
 
-    </script>
-    
-    </body>
+	<div data-aos="zoom-up" class="we-info">
+		Hotel nazwa w miasto pod miasto to miejsce wyjątkowe. Obiekt położony jest na porośniętym starodrzewiem Wzgórzu Parkowym. Oryginalna bryła architektoniczna hotelu z wieloma tarasami i wieżyczkami doskonale wkomponowuje się w otoczenie, nadając miejscu kameralny klimat, sprzyjający wypoczynkowi i spotkaniom w atmosferze relaksu i odprężenia.
+	</div>
+
+	<section class="about">
+		<div class="option-container">
+			
+			
+			<div class="option">
+				<div class="option-image">
+					<span class="fas fa-bowling-ball fa-2x"></span></div>
+						<div class="option-name"><b>Mnóstwo atrakcji</b></div>
+							<div class="option-dis">W naszym hotelu czeka Cię mnóstwo atrakcji licząc od siłowni i basenu kończąc na wielu kortach do gry m.in w koszykówkę, tenisa i wielu sekcji na hali sportowej.</div>			
+			</div>
+				
+			<div class="option">
+				<div class="option-image">
+					<span class="fas fa-hamburger fa-2x"></span></div>
+						<div class="option-name"><b>Katering</b></div>
+							<div class="option-dis">Posiadamy możliwość kateringu, duży wybór jakościowych drogich i eksplozywnych dań oraz napojów.</div>
+				
+			</div>
+			
+			<div class="option">
+				<div class="option-image">
+					<span class="fas fa-hands-helping fa-2x"></span></div>
+						<div class="option-name"><b>Profesjonalna obsługa i pomoc</b></div>
+							<div class="option-dis">Nasz obsługa działa całodobowo, twój problem - nasz obowiązek Ci pomóc. Posiadamy w pełni wysoko wykwalifikowanych lekarzy i pielęgniarzy.</div>		
+			</div>
+			
+		</div>
+
+	</section>
+	
+	<div id="galleryViev"></div>
+	
+	<div class="gallery-section">
+	    <div class="inner-width">
+	        <h1>Galeria</h1>
+	        <div class="border"></div>
+	        <div class="gallery">
+	            
+	            <a href="img/1.png" data-aos="zoom-in-down" class="image">
+	                <img src="img/1.png" alt="jpg">
+	            </a>
+	            
+	             <a href="img/8.png" data-aos="zoom-in-down" class="image">
+	                <img src="img/8.png" alt="jpg">
+	            </a>
+	            
+	             <a href="img/3.png" data-aos="zoom-in-down" class="image">
+	                <img src="img/3.png" alt="jpg">
+	            </a>
+	            
+	             <a href="img/4.png" data-aos="zoom-in-down" class="image">
+	                <img src="img/4.png" alt="jpg">
+	            </a>
+	            
+	             <a href="img/6.png" data-aos="zoom-in-down" class="image">
+	                <img src="img/6.png" alt="jpg">
+	            </a>
+	            
+	             <a href="img/5.png" data-aos="zoom-in-down" class="image">
+	                <img src="img/5.png" alt="jpg">
+	            </a>
+	            
+	             <a href="img/7.png" data-aos="zoom-in-down" class="image">
+	                <img src="img/7.png" alt="jpg">
+	            </a>
+	            
+	             <a href="img/2.png" data-aos="zoom-in-down" class="image">
+	                <img src="img/2.png" alt="jpg">
+	            </a>
+	            
+	        </div>
+	    </div>
+	</div>
+	
+		<div class="plan-name">Wybierz swój plan
+			<div class="plan-name-border"></div>
+		</div>
+
+
+	<div id="priceViev"></div>
+	
+	<div class="slideshow-container">
+
+	<div class="mySlides">
+		<div class="info-container">
+			<span class="info">Plan I</span>
+			<span data-aos="zoom-in-up "class="more">
+				<button class="more-info">Szczegóły</button>
+			</span>
+		</div>
+	</div>
+
+	<div class="mySlides">
+		<div class="info-container">
+			<span class="info">Plan II</span>
+			<span data-aos="zoom-in-up" class="more2">
+				<button class="more-info">Szczegóły</button>
+			</span>
+		</div>
+	</div>
+
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+
+	<div class="dot-container">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+	</div>
+
+		<div id="contactViev"></div>
+
+		<div class="contact-place-head">
+			<h2>Położenie i Kontakt</h2>
+			<div class="contact-border"></div>
+		</div>
+
+
+	<section class="contact-place">
+		<iframe data-aos="fade-up" class="map" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Warszawa%20Stadion+(Tytu%C5%82)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+		<div data-aos="zoom-in" class="contact-container">
+			<h3 class="contact-me">Skontaktuj się z <br> nami!</h3>
+			<div class="details"> Chcesz poznać szczegóły naszej oferty? Zapytać co jeszcze możemy dla Ciebie zrobić? Skontaktuj się z nami, odpowiemy na każde twoje pytanie.</div>
+			
+			<div class="contact-form-container">
+			
+			<div class="contact-form">
+				<div class="icon"><span class="fas fa-map-marker-alt"></span></div>
+				<div class="icon-disc">Warszawa, Marszałkowska 22</div>
+			</div>
+	
+			<div class="contact-form">
+				<div class="icon"><span class="fas fa-envelope"></span></div>
+				<div class="icon-disc"><a href="mailto:example-email01@wp.pl">example-email01@wp.pl</a></div>
+			</div>						
+		</div>
+	</section>
+	
+	<section class="footer">
+		<div class="author">Design & Code by Kacper Banaszkiewicz</div>
+		<div class="github"><a href="https://github.com/OuttraZd" target="_blank"><span class="fab fa-github-square"></span></a></div>
+	</section>
+
+	
+	<button type="button" onClick="closePopup()" class="script">
+	
+	<script>
+	
+		(function() {  
+		window.addEventListener("scroll", function (event) {
+		var scroll = this.scrollY;
+		if(scroll > 310) {
+		document.body.classList.add('scrolled');
+		} else {
+		document.body.classList.remove('scrolled');
+		}
+		});
+		})()
+	
+	</script>
+	
+	<script type="text/javascript" src="script/jquery.scrollTo.min.js"></script>
+	<script type="text/javascript">
+	
+		jQuery(function($)
+		{
+		//zresetuj scrolla
+		$.scrollTo(0);
+	
+		$('#link1').click(function() { $.scrollTo($('#aboutViev'), 500); });
+		$('#link2').click(function() { $.scrollTo($('#galleryViev'), 500); });
+		$('#link3').click(function() { $.scrollTo($('#priceViev'), 500); });
+		$('#link4').click(function() { $.scrollTo($('#contactViev'), 500); });
+		}
+		);
+	
+	</script>
+	
+	<script>
+	
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		
+		function plusSlides(n) {
+		showSlides(slideIndex += n);
+		}
+		
+		function currentSlide(n) {
+		showSlides(slideIndex = n);
+		}
+		
+		function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		if (n > slides.length) {slideIndex = 1} 
+		if (n < 1) {slideIndex = slides.length}
+		for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none"; 
+		}
+		for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block"; 
+		dots[slideIndex-1].className += " active";
+		}
+	
+	</script>
+	
+	<script>
+	
+	function closePopup() {
+	$.magnificPopup.close();
+	}
+	
+	</script>
+	
+	<script>
+	
+	$('.menu').click(function (){
+	$('ul').toggleClass('active-menu');
+	})
+	
+	</script>
+	
+	<script>
+	
+	$('.more').click(function (){
+	$('.plan-menu').addClass('active-plan-menu');
+	})
+	
+	</script>
+	
+	<script>
+	
+	$('.plan-box-active').click(function (){
+	$('.plan-menu').removeClass('active-plan-menu');
+	})
+	
+	</script>
+	
+	<script>
+	
+	$('.more2').click(function (){
+	$('.plan-menu2').addClass('active-plan-menu');
+	})
+	
+	</script>
+	
+	<script>
+	
+	$('.plan-box-active').click(function (){
+	$('.plan-menu2').removeClass('active-plan-menu');
+	})
+	
+	</script>
+	
+	<script>
+	
+	$(".gallery").magnificPopup({
+	delegate: 'a',
+	type: 'image',
+	gallery:{
+	enabled: true
+	}
+	});
+	
+	</script>
+	
+	<script type="text/javascript" src="script/aos.js"></script>
+	<script>
+	
+		$(function() {
+		AOS.init();
+		});
+	
+	</script>
+	
+</body>
 </html>
