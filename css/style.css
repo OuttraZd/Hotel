@@ -542,6 +542,11 @@ ul li a {
 	transform:scale(1.2);
 }
 
+@keyframes ulShow {
+	0% { position:relative; bottom:200px; }
+	50% {bottom:0;}
+}
+
 
 @media (min-width:1350px) {
 	.contact-me {
@@ -581,12 +586,18 @@ ul li a {
     	background-color:#f1f1f1;
 	}
 	
+	ul:first-child {
+		animation-duration:.8s;
+		animation-name:ulShow;
+	}
+	
 	ul li {
 		display:block;
 		text-align:center;
 		padding:20px;
 		color:#000;
 		height:60px;
+		
 	}
 	
 	ul li:hover {
