@@ -444,11 +444,6 @@ ul li a {
 	text-transform: uppercase;
 }
 
-.price:hover {
-	color:gray;
-	transition:color 0.5s ease;
-}
-
 .contact-place {
 	margin-top:10px;
 	width:100%;
