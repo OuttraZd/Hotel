@@ -397,6 +397,13 @@ ul li a {
 	display:none;
 	position:relative;
 	z-index:9999;
+	animation-name:plan;
+	animation-duration:.5s;
+}
+
+@keyframes plan {
+	0%{bottom:200px;}
+	100%{bottom:0;}
 }
 
 .active-plan-menu {
