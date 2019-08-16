@@ -294,7 +294,7 @@ ul li a {
 	padding:80px 0 20px 0;
 	font-weight: bold;
 	text-transform:uppercase;
-}
+} 
 
 .plan-name-border {
 	width:260px;
@@ -402,8 +402,9 @@ ul li a {
 }
 
 @keyframes plan {
-	0%{bottom:200px;}
-	100%{bottom:0;}
+	0% {
+		transform:translate(0, -500px);
+	}
 }
 
 .active-plan-menu {
@@ -545,8 +546,9 @@ ul li a {
 }
 
 @keyframes ulShow {
-	0% { position:relative; bottom:200px; }
-	50% {bottom:0;}
+	0% { 
+		transform:translate(0, -500px); 
+	}
 }
 
 
@@ -589,7 +591,7 @@ ul li a {
 	}
 	
 	ul:first-child {
-		animation-duration:.8s;
+		animation-duration:.5s;
 		animation-name:ulShow;
 	}
 	

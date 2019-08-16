@@ -9,8 +9,6 @@
 		<link rel="stylesheet" href="css/aos.css">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 	</head>
 	
 	<body>
@@ -225,7 +223,12 @@
 	
 	<button type="button" onClick="closePopup()" class="script">
 	
-	<script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.scrollTo.min.js"></script>
+	<script type="text/javascript" src="scripts/aos.js"></script>
+	
+	<script type="text/javascript">
 	
 		(function() {  
 		window.addEventListener("scroll", function (event) {
@@ -240,7 +243,6 @@
 	
 	</script>
 	
-	<script type="text/javascript" src="script/jquery.scrollTo.min.js"></script>
 	<script type="text/javascript">
 	
 		jQuery(function($)
@@ -257,7 +259,7 @@
 	
 	</script>
 	
-	<script>
+	<script type="text/javascript">
 	
 		var slideIndex = 1;
 		showSlides(slideIndex);
@@ -288,7 +290,7 @@
 	
 	</script>
 	
-	<script>
+	<script type="text/javascript">
 	
 	function closePopup() {
 	$.magnificPopup.close();
@@ -304,7 +306,7 @@
 	
 	</script>
 	
-	<script>
+	<script type="text/javascript">
 	
 	$('.more').click(function (){
 	$('.plan-menu').addClass('active-plan-menu');
@@ -312,7 +314,7 @@
 	
 	</script>
 	
-	<script>
+    <script type="text/javascript">
 	
 	$('.plan-box-active').click(function (){
 	$('.plan-menu').removeClass('active-plan-menu');
@@ -320,7 +322,7 @@
 	
 	</script>
 	
-	<script>
+	<script type="text/javascript">
 	
 	$('.more2').click(function (){
 	$('.plan-menu2').addClass('active-plan-menu');
@@ -328,7 +330,7 @@
 	
 	</script>
 	
-	<script>
+	<script type="text/javascript">
 	
 	$('.plan-box-active').click(function (){
 	$('.plan-menu2').removeClass('active-plan-menu');
@@ -336,7 +338,7 @@
 	
 	</script>
 	
-	<script>
+	<script type="text/javascript">
 	
 	$(".gallery").magnificPopup({
 	delegate: 'a',
@@ -348,8 +350,7 @@
 	
 	</script>
 	
-	<script type="text/javascript" src="script/aos.js"></script>
-	<script>
+	<script type="text/javascript">
 	
 		$(function() {
 		AOS.init();
