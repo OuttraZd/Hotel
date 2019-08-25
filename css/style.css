@@ -397,15 +397,10 @@ ul li a {
 	display:none;
 	position:relative;
 	z-index:9999;
-	animation-name:plan;
+	animation-name:upTobottom;
 	animation-duration:.5s;
 }
 
-@keyframes plan {
-	0% {
-		transform:translate(0, -500px);
-	}
-}
 
 .active-plan-menu {
 	background:#f1f1f1;
@@ -545,12 +540,6 @@ ul li a {
 	transform:scale(1.2);
 }
 
-@keyframes ulShow {
-	0% { 
-		transform:translate(0, -500px); 
-	}
-}
-
 
 @media (min-width:1350px) {
 	.contact-me {
@@ -588,12 +577,10 @@ ul li a {
 		padding:10px;
     	left: 0;
     	background-color:#f1f1f1;
+    	animation-duration:.5s;
+    	animation-name:upTobottom;
 	}
 	
-	ul:first-child {
-		animation-duration:.5s;
-		animation-name:ulShow;
-	}
 	
 	ul li {
 		display:block;
@@ -679,4 +666,16 @@ ul li a {
     .gallery-section .image {
         flex:100%;
     }
+}
+
+@keyframes upTobottom {
+	0% {
+		transform:translateY(-500px);
+	}
+}
+
+@-webkit-keyframes upTobottom {
+	0% {
+		transform:translateY(-500px);
+	}
 }
