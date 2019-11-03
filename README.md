@@ -1,17 +1,19 @@
-# Hotel (Website for fictionl hotel) H1
+# Hotel (Website for fictionl hotel)
 
-## Technology used
+- - - -
 
-```
-
-* [HTML]
-* [CSS]
-* [JS]
+### Technology used
 
 ```
 
-### Technology used H3
+* HTML
+* CSS
+* JS
 
-# Hotel Website, web for fictional hotel. H1
-Technology used: HTML, CSS, JS.
-Time: ~2,5 month (Half April, May and June 2019).
+```
+
+- - - -
+
+### Time
+
+``` ~2,5 month (Half April, May and June 2019)
