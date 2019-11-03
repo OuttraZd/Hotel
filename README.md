@@ -4,13 +4,13 @@
 
 ### Technology used
 
-```
+
 
 *HTML
 *CSS
 *JS
 
-```
+
 
 - - - -
 
