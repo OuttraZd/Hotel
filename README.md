@@ -1,4 +1,4 @@
-# Hotel (Website for fictionl hotel)
+# Hotel (Static website for fictionl hotel)
 
 - - - -
 
@@ -6,9 +6,9 @@
 
 ```
 
-* HTML
-* CSS
-* JS
+*HTML
+*CSS
+*JS
 
 ```
 
